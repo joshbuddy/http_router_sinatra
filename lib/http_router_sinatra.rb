@@ -1,4 +1,3 @@
-$:.unshift "~/Development/http_router/lib"
 require 'http_router'
 require 'sinatra'
 
@@ -93,7 +92,7 @@ class HttpRouter
           route.name(name) if name
 
           route.arbitrary_with_continue do |req, params|
-            if req.rack_request.env['HTTP_ROUTER_405_TESTING_ACCEPTANCE']
+            if req.testing_405?
               req.continue[true]
             else
               req.rack_request.env['sinatra.instance'].instance_eval do

@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     http_router_sinatra (0.0.1)
-      http_router (~> 0.6.0)
+      http_router (~> 0.6.1)
       sinatra (~> 1.2.0)
 
 GEM
@@ -36,7 +36,7 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 1.0.0)
   code_stats
-  http_router (~> 0.6.0)
+  http_router (~> 0.6.1)
   http_router_sinatra!
   minitest (~> 2.0.0)
   phocus
