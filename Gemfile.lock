@@ -8,10 +8,21 @@ PATH
 GEM
   remote: http://rubygems.org/
   specs:
+    callsite (0.0.4)
+    code_stats (0.0.1)
+      dirge (>= 0.0.3)
+      rainbow
+    dirge (0.0.5)
+      callsite (>= 0.0.2)
     http_router (0.6.1)
       rack (>= 1.0.0)
       url_mount (~> 0.2.1)
+    minitest (2.0.2)
+    phocus (1.1)
     rack (1.2.2)
+    rainbow (1.1)
+    rake (0.8.7)
+    rbench (0.2.3)
     sinatra (1.2.1)
       rack (~> 1.1)
       tilt (>= 1.2.2, < 2.0)
@@ -23,6 +34,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bundler (~> 1.0.0)
+  code_stats
   http_router (~> 0.6.0)
   http_router_sinatra!
+  minitest (~> 2.0.0)
+  phocus
+  rake
+  rbench
   sinatra (~> 1.2.0)
